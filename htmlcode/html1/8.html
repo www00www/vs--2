@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        
+        }
+        .mm{
+            width: 200px;
+            /* height: 200px; */
+            /* background-color: #bfa; */
+            border:2px solid red;
+            /* overflow: hidden; */
+        }
+        .kk{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(102, 208, 232);
+            float:left
+        }
+         .mm::after{
+           content: '';
+           clear: both;
+           /* display: block; */
+         }
+         /* .ii{
+            clear:both;
+         } */
+    </style>
+</head>
+<body>
+    <div class="mm">
+        <div class="kk"></div>
+        <div class="ii"> </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../fontawesome/css/all.css">
+    <style>
+        *{
+            margin:0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul li{
+            list-style: none;
+        }
+
+        .top-bar{
+          height:30px;
+          background-color:#e3e4e5;
+          border-bottom: 1px solid #ddd;
+          line-height: 30px;
+          
+        }
+         
+        .middle{
+            width:1200px;
+            margin:0 auto;
+            /* background-color: #bfa; */
+            position: relative;
+        }
+        .left{
+            float:left;
+            /* width: 60px; */
+            /* background-color: #bfa; */
+            /* width: 60px; */
+        }
+        .right{
+            float:right;
+        }
+
+        .list{
+            width: 300px;     /*存在的问题,就是宽度过宽会变形 */
+            height: 400px;
+            background-color: white;
+            border:1px solid rgb(204,204, 204);
+            /* margin-top: 20px; */
+            display: none;   /*记得打开 */
+            position: absolute; /*设置绝对定位,使其不占据页面的位置,一般都是设置绝对定位来操作的  */
+            box-shadow: 0 2px rgba(0, 0, 0,0.2);
+            top:31px;
+        }
+        
+        .clearfix::before,.clearfix::after{
+            content: '';
+            display: table;
+            clear: both;
+        }
+
+        ul li{
+            float:left;
+        }
+        .local,.ll,.mm{
+            color: red;
+        }
+ 
+        .currents
+        {
+            padding: 0 10px;
+           
+           
+            padding-bottom: 1px;
+            position: relative;
+            z-index: 9999;
+            /* border-bottom: none; */
+            border:1px solid transparent;
+            border-bottom: none;
+        }
+
+        .left:hover .currents
+        {
+            background-color: white;
+            border:1px solid rgb(204,204, 204);
+            border-bottom: none;
+        }
+
+        .line
+        {
+            width: 1px;
+            height:10px;
+            background-color: #117be5;
+            margin: 10px 5px;
+            z-index: 999;
+        }
+        
+        .right li a,span{
+            font-family:微软雅黑;
+            color:#999;
+        }
+
+        .left:hover .list{
+            display: block;
+        }
+ 
+
+    </style>
+</head>
+<body>
+   <div class="top-bar ">
+        <div class="middle clearfix">
+            <div class="left ">
+                <div class="currents">
+                   <i class="fas fa-map-marker-alt local"></i>
+                   <a href="javascript:;" class="curt">北京</a>
+                </div>
+                <div class="list"></div>
+               
+            </div>
+            
+            <ul class="right clearfix">
+                <li>
+                  <a href="javascript:;">你好,请登录</a>
+                  <a href="javascript:;" class="mm">免费注册 </a>
+                </li>
+      
+                <li class="line"></li>
+                <li><a href="javascript:;">我的订单</a></li>
+              
+                <li class="line"></li>
+                <li>
+                  <a href="javascript:;">我的京东</a>
+                  <i class="fas fa-angle-down"></i>
+                </li>
+       
+                <li class="line"></li>
+                <li><a href="javascript:;">京东会员</a></li>
+            
+                <li class="line"></li>
+                <li>
+                <a href="javascript:;" class="ll">我的采购</a>
+                <i class="fas fa-angle-down"></i>
+               </li>
+             
+               <li class="line"></li>
+                <li>
+                  <a href="javascript:;">商家服务</a>
+                  <i class="fas fa-angle-down"></i>
+                </li>
+
+                <li class="line"></li>
+                <li>
+                  <a href="javascript:;">网站导航</a>
+                  <i class="fas fa-angle-down"></i>
+                </li>
+                <li class="line"></li>
+                 <li><span>手机京东</span></li>
+                 <li><a href="javascript:;">网站无障碍</a></li>
+            </ul>
+        </div>   
+   </div>
+</body>
+</html>
